@@ -1,0 +1,24 @@
+.offer{
+    padding-top: 130px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 0;
+    &__wrapper{
+        width: 100%;
+        padding: 20px 30px 60px;
+        @include glass;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        margin-top: 40px;
+    }
+    &__img{
+        @include image;
+        width: max-content;
+    }
+}

@@ -1,0 +1,22 @@
+body {
+    color: var(--text);
+    font-family: InterTight;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    background: var(--black);
+}
+
+h1 {
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 109.996%;
+    letter-spacing: -1.7px;
+}
+
+.container {
+    max-width: 1186px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
