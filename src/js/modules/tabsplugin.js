@@ -1,13 +1,11 @@
-import * as flsFunctions from "./modules/functions.js";
-import Swiper, { Navigation, Pagination } from 'swiper';
+/*
+1. Табы по клику
+2. Табы с клавиатуры ====  стрелки влево/вправо/вниз
+3. События изменения в момент переключения табов
+4. Событие переключение таба в любой момент времени
+5. Проверки на различные условия
 
-flsFunctions.isWebp();
-
-const swiper = new Swiper();
-
-
-
-
+*/
 class DerTabs {
     constructor(selector, options) {
         let defaultOption = {
@@ -109,10 +107,3 @@ class DerTabs {
         this.options.isChanget(this);
     }
 }
-
-new DerTabs('tab', {
-    isChanget: (tabs) => {
-        console.log(tabs);
-    }
-});
-

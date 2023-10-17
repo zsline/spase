@@ -28,6 +28,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: InterTight;
   font-display: swap;
@@ -239,6 +246,7 @@ h3 {
 }
 .offer h2 {
   margin-bottom: 50px;
+  font-weight: 400;
 }
 .offer__inner {
   display: flex;
@@ -255,4 +263,52 @@ h3 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.price__inner {
+  padding: 50px 30px;
+}
+.price__inner .tabs {
+  position: relative;
+  margin: 0 auto;
+}
+.price__inner .tabs__nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  right: 100px;
+  top: 0;
+}
+.price__inner .tabs__nav-item {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+.price__inner .tabs__nav-item:nth-child(1) {
+  right: 403px;
+  padding: 10px;
+  text-align: center;
+}
+.price__inner .tabs__nav-item:nth-child(2) {
+  right: 280px;
+  padding: 10px;
+  text-align: center;
+}
+.price__inner .tabs__nav-item:nth-child(3) {
+  right: 160px;
+  padding: 10px;
+  text-align: center;
+}
+.price__inner .tabs__panel {
+  max-width: 100%;
+  height: 610px;
+  padding: 30px;
+  display: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+.price__inner .tabs__panel.tabs__panel--active {
+  display: block;
 }
