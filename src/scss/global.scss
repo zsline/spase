@@ -16,6 +16,13 @@ h1 {
 }
 
 h2 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 1000px;
+}
+h3 {
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
@@ -26,4 +33,20 @@ h2 {
     max-width: 1186px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.image{
+    @include image;
+    width: max-content;
+}
+.y-btn{
+    display: inline-block;
+    width: max-content;
+    color: var(--black);
+    @include btn;
+    background-color: var(--accent);
+}
+.glass{
+    width: 100%;
+    @include glass;
 }
